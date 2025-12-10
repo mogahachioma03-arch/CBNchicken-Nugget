@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - CBN Chicken Nugget</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+
+    <!-- NAVBAR -->
+    <nav class="bg-white shadow-md py-4 px-6 flex justify-between items-center">
+        <div class="flex items-center gap-4">
+            <img src="./images/logo1.jpeg" class="w-12 h-12 object-cover rounded-full">
+            <h1 class="text-2xl font-bold text-gray-900">CBN Chicken Nugget</h1>
+        </div>
+        <ul class="flex gap-6">
+            <li><a href="index.html" class="text-gray-700 hover:text-orange-500 font-semibold">HOME</a></li>
+            <li><a href="menu.html" class="text-gray-700 hover:text-orange-500 font-semibold">MENU</a></li>
+            <li><a href="order.html" class="text-gray-700 hover:text-orange-500 font-semibold">ORDER</a></li>
+            <li><a href="gallery.html" class="text-gray-700 hover:text-orange-500 font-semibold">GALLERY</a></li>
+            <li><a href="service.html" class="text-gray-700 hover:text-orange-500 font-semibold">SERVICE</a></li>
+            <li><a href="contact.html" class="text-gray-700 hover:text-orange-500 font-semibold">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <!-- MENU HEADINGS -->
+    <section class="w-full flex flex-col items-center justify-center my-16 px-4">
+        <h2 class="text-lg lg:text-2xl font-semibold text-orange-500 tracking-widest uppercase mb-3 text-center">
+            Our Menu
+        </h2>
+        <h1 class="text-4xl lg:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 text-center leading-tight">
+            The Most Popular
+        </h1>
+    </section>
+
+    <!-- THREE IMAGES GRID -->
+    <section class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 px-4 mb-16">
+        
+        <!-- Single Menu Item -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col items-center transition transform hover:-translate-y-2 hover:shadow-2xl">
+            <img src="./images/shawarma.jpg" alt="Shawarma" class="w-full h-48 object-cover">
+            <div class="p-4 text-center">
+                <p class="font-bold text-lg mb-1">Shawarma</p>
+                <p class="text-orange-500 font-semibold mb-3">₦3,500</p>
+                <a href="order.html?item=Shawarma&price=3500" class="inline-block bg-orange-500 text-white font-semibold px-6 py-2 rounded-full transition hover:bg-orange-600 hover:scale-105">
+                    Shop Now
+                </a>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col items-center transition transform hover:-translate-y-2 hover:shadow-2xl">
+            <img src="./images/buger2.jpg" alt="Burger" class="w-full h-48 object-cover">
+            <div class="p-4 text-center">
+                <p class="font-bold text-lg mb-1">Burger</p>
+                <p class="text-orange-500 font-semibold mb-3">₦3,000</p>
+                <a href="order.html?item=Burger&price=3000" class="inline-block bg-orange-500 text-white font-semibold px-6 py-2 rounded-full transition hover:bg-orange-600 hover:scale-105">
+                    Shop Now
+                </a>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col items-center transition transform hover:-translate-y-2 hover:shadow-2xl">
+            <img src="./images/sandwich.jpg" alt="Sandwich" class="w-full h-48 object-cover">
+            <div class="p-4 text-center">
+                <p class="font-bold text-lg mb-1">Sandwich</p>
+                <p class="text-orange-500 font-semibold mb-3">₦1,500</p>
+                <a href="order.html?item=Sandwich&price=1500" class="inline-block bg-orange-500 text-white font-semibold px-6 py-2 rounded-full transition hover:bg-orange-600 hover:scale-105">
+                    Shop Now
+                </a>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col items-center transition transform hover:-translate-y-2 hover:shadow-2xl">
+            <img src="./images/fried1.jpeg" alt="Chicken Nugget" class="w-full h-48 object-cover">
+            <div class="p-4 text-center">
+                <p class="font-bold text-lg mb-1">Chicken Nugget</p>
+                <p class="text-orange-500 font-semibold mb-3">₦5,000</p>
+                <a href="order.html?item=Chicken Nugget&price=5000" class="inline-block bg-orange-500 text-white font-semibold px-6 py-2 rounded-full transition hover:bg-orange-600 hover:scale-105">
+                    Shop Now
+                </a>
+            </div>
+        </div>
+
+        <!-- FIXED FROM HERE – removed the wrong </div> -->
+
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col items-center transition transform hover:-translate-y-2 hover:shadow-2xl">
+            <img src="./images/chicken pepper soup.jpg" alt="Chicken Pepper Soup" class="w-full h-48 object-cover">
+            <div class="p-4 text-center">
+                <p class="font-bold text-lg mb-1">Chicken Pepper Soup</p>
+                <p class="text-orange-500 font-semibold mb-3">₦4,000</p>
+                <a href="order.html?item=Chichken Pepper Soup&price=4000" class="inline-block bg-orange-500 text-white font-semibold px-6 py-2 rounded-full transition hover:bg-orange-600 hover:scale-105">
+                    Shop Now
+                </a>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col items-center transition transform hover:-translate-y-2 hover:shadow-2xl">
+            <img src="./images/loliipop.jpg" alt="Chicken Lollipop" class="w-full h-48 object-cover">
+            <div class="p-4 text-center">
+                <p class="font-bold text-lg mb-1">Chicken Lollipop</p>
+                <p class="text-orange-500 font-semibold mb-3">₦6,500</p>
+                <a href="order.html?item=Chicken Lollipop&price=6500" class="inline-block bg-orange-500 text-white font-semibold px-6 py-2 rounded-full transition hover:bg-orange-600 hover:scale-105">
+                    Shop Now
+                </a>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col items-center transition transform hover:-translate-y-2 hover:shadow-2xl">
+            <img src="./images/chicken salad.jpg" alt="Chicken Salad" class="w-full h-48 object-cover">
+            <div class="p-4 text-center">
+                <p class="font-bold text-lg mb-1">Chicken Salad</p>
+                <p class="text-orange-500 font-semibold mb-3">₦3,000</p>
+                <a href="order.html?item=Chicken Salad&price=3000" class="inline-block bg-orange-500 text-white font-semibold px-6 py-2 rounded-full transition hover:bg-orange-600 hover:scale-105">
+                    Shop Now
+                </a>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col items-center transition transform hover:-translate-y-2 hover:shadow-2xl">
+            <img src="./images/chicken ssuce - Copy.avif" alt="Chicken Sauce" class="w-full h-48 object-cover">
+            <div class="p-4 text-center">
+                <p class="font-bold text-lg mb-1">Chicken Sauce</p>
+                <p class="text-orange-500 font-semibold mb-3">₦10,000</p>
+                <a href="order.html?item=Chicken Sauce&price=10000" class="inline-block bg-orange-500 text-white font-semibold px-6 py-2 rounded-full transition hover:bg-orange-600 hover:scale-105">
+                    Shop Now
+                </a>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col items-center transition transform hover:-translate-y-2 hover:shadow-2xl">
+            <img src="./images/chickenshawarma.avif" alt="Chicken Shawarma" class="w-full h-48 object-cover">
+            <div class="p-4 text-center">
+                <p class="font-bold text-lg mb-1">Chicken Shawarma</p>
+                <p class="text-orange-500 font-semibold mb-3">₦4,000</p>
+                <a href="order.html?item=Chicken Shawarma&price=4000" class="inline-block bg-orange-500 text-white font-semibold px-6 py-2 rounded-full transition hover:bg-orange-600 hover:scale-105">
+                    Shop Now
+                </a>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col items-center transition transform hover:-translate-y-2 hover:shadow-2xl">
+            <img src="./images/chips.avif" alt="Chicken and Chips" class="w-full h-48 object-cover">
+            <div class="p-4 text-center">
+                <p class="font-bold text-lg mb-1">Chicken and Chips</p>
+                <p class="text-orange-500 font-semibold mb-3">₦5,000</p>
+                <a href="order.html?item=Chicken and Chips&price=5000" class="inline-block bg-orange-500 text-white font-semibold px-6 py-2 rounded-full transition hover:bg-orange-600 hover:scale-105">
+                    Shop Now
+                </a>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col items-center transition transform hover:-translate-y-2 hover:shadow-2xl">
+            <img src="./images/baked.jpg" alt="peppered potatoe and chicken" class="w-full h-48 object-cover">
+            <div class="p-4 text-center">
+                <p class="font-bold text-lg mb-1">peppered potatoe and chicken</p>
+                <p class="text-orange-500 font-semibold mb-3">₦6,000</p>
+                <a href="order.html?item=peppered potatoe and chicken&price=5000" class="inline-block bg-orange-500 text-white font-semibold px-6 py-2 rounded-full transition hover:bg-orange-600 hover:scale-105">
+                    Shop Now
+                </a>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col items-center transition transform hover:-translate-y-2 hover:shadow-2xl">
+            <img src="./images/chicken-macaroni-salad-in-serving-bowl.webp" alt="Macaroni Chicken Salad" class="w-full h-48 object-cover">
+            <div class="p-4 text-center">
+                <p class="font-bold text-lg mb-1">Macaroni Chicken Salad</p>
+                <p class="text-orange-500 font-semibold mb-3">₦3,500</p>
+                <a href="order.html?item=Macaroni Chicken Salad&price=5000" class="inline-block bg-orange-500 text-white font-semibold px-6 py-2 rounded-full transition hover:bg-orange-600 hover:scale-105">
+                    Shop Now
+                </a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+<footer class="bg-gray-800 text-white py-12">
+  <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-10">
+
+    <!-- 1. Company Writeup & Links -->
+    <div>
+      <h2 class="text-2xl font-bold mb-4">CBN Chicken Nugget</h2>
+      <p class="text-gray-300 mb-4">
+        Delivering delicious meals with passion and care. Join our journey for the best culinary experience in town!
+      </p>
+      <ul class="space-y-2 text-gray-300">
+        <li class="flex items-center gap-2 hover:text-orange-500 cursor-pointer">
+          <i class="fas fa-arrow-right"></i> <a href="about.html">About Us</a>
+        </li>
+        <li class="flex items-center gap-2 hover:text-orange-500 cursor-pointer">
+          <i class="fas fa-arrow-right"></i> <a href="contact.html">Contact Us</a>
+        </li>
+        <li class="flex items-center gap-2 hover:text-orange-500 cursor-pointer">
+          <i class="fas fa-arrow-right"></i> <a href="#">Privacy Policy</a>
+        </li>
+        <li class="flex items-center gap-2 hover:text-orange-500 cursor-pointer">
+          <i class="fas fa-arrow-right"></i> <a href="#">Terms & Conditions</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- 2. Contact Info & Social Media -->
+    <div>
+      <h2 class="text-2xl font-bold mb-4">Contact</h2>
+      <div class="flex items-center gap-2 mb-2">
+        <i class="material-icons text-orange-500">location_on</i>
+        <p class="text-gray-300">25 Amenyi Road, Awka, Anambra, Nigeria</p>
+      </div>
+      <div class="flex items-center gap-2 mb-2">
+        <i class="material-icons text-orange-500">call</i>
+        <p class="text-gray-300">+234 907 710 0525</p>
+      </div>
+      <div class="flex items-center gap-2 mb-4">
+        <i class="material-icons text-orange-500">mail</i>
+        <p class="text-gray-300">cbnnuggets@gmail.com</p>
+      </div>
+      <div class="flex gap-4 mt-2">
+        <a href="#" class="text-gray-300 hover:text-orange-500"><i class="fab fa-twitter fa-lg"></i></a>
+        <a href="#" class="text-gray-300 hover:text-orange-500"><i class="fab fa-facebook-f fa-lg"></i></a>
+        <a href="#" class="text-gray-300 hover:text-orange-500"><i class="fab fa-youtube fa-lg"></i></a>
+        <a href="#" class="text-gray-300 hover:text-orange-500"><i class="fab fa-linkedin-in fa-lg"></i></a>
+      </div>
+    </div>
+
+    <!-- 3. Opening Hours -->
+    <div>
+      <h2 class="text-2xl font-bold mb-4">Opening Hours</h2>
+      <div class="text-gray-300 space-y-2">
+        <p>Monday - Saturday</p>
+        <p>09AM - 09PM</p>
+        <p>Sunday</p>
+        <p>10AM - 08PM</p>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+<!-- Font Awesome & Material Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+integrity="sha512-pVJ1u5MvVQKcZBJt1u5aGgA3pM2cOxgDd0q+1zM0Sm6IkqR8Gv3V7abN9MkY1p5axRvG5oaPv5DfSqqiZUJ3vQ==" 
+crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<!-- SCROLL TO TOP BUTTON -->
+<button id="scrollTopBtn" 
+        class="fixed bottom-6 right-6 bg-orange-500 text-white p-3 rounded-full shadow-lg text-2xl hidden z-50">
+    ↑
+</button>
+
+<script>
+const toggleBtn = document.getElementById("theme-toggle");
+
+// Load saved theme
+if (localStorage.getItem("theme") === "dark") {
+    document.body.classList.add("dark-mode");
+    toggleBtn.textContent = "☀️";
+}
+
+toggleBtn.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+
+    if (document.body.classList.contains("dark-mode")) {
+        toggleBtn.textContent = "☀️";
+        localStorage.setItem("theme", "dark");
+    } else {
+        toggleBtn.textContent = "🌙";
+        localStorage.setItem("theme", "light");
+    }
+});
+</script>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+
+    const scrollBtn = document.getElementById("scrollTopBtn");
+
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > 200) {
+            scrollBtn.classList.remove("hidden");
+        } else {
+            scrollBtn.classList.add("hidden");
+        }
+    });
+
+    scrollBtn.addEventListener("click", function () {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+
+});
+</script>
+
+</body>
+</html>

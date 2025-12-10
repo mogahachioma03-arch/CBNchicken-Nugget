@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order | CBN Chicken Nugget</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen">
+
+    <!-- NAVBAR -->
+    <nav class="bg-white shadow-md fixed w-full z-50">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <!-- Logo -->
+            <div class="flex items-center gap-2">
+                <img src="./images/logo1.jpeg" alt="Logo" class="w-12 h-12 rounded-full object-cover">
+                <h1 class="text-xl font-bold text-orange-500">CBN Chicken Nugget</h1>
+            </div>
+            <!-- Navigation Links -->
+            <ul class="flex gap-6 font-semibold">
+                <li><a href="index.html" class="hover:text-orange-500 transition">HOME</a></li>
+                <li><a href="menu.html" class="hover:text-orange-500 transition">MENU</a></li>
+                <li><a href="order.html" class="hover:text-orange-500 transition">ORDER</a></li>
+                <li><a href="gallery.html" class="hover:text-orange-500 transition">GALLERY</a></li>
+                <li><a href="service.html" class="hover:text-orange-500 transition">SERVICE</a></li>
+                <li><a href="contact.html" class="hover:text-orange-500 transition">CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- WATERMARK IMAGE -->
+    <img src="./images/logo1.jpeg" 
+       class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-10 w-1/2 pointer-events-none z-0" 
+       alt="Watermark">
+
+    <!-- MAIN ORDER FORM WRAPPER -->
+    <main class="pt-28 px-4 flex justify-center">
+        <div class="bg-white w-full max-w-4xl rounded-2xl shadow-xl p-8 relative">
+
+            <!-- COMPANY ACCOUNT NUMBER (SIDE BOX) -->
+            <div class="absolute right-[-90px] top-10 bg-orange-500 text-white p-4 rounded-xl shadow-lg w-64 hidden lg:block">
+                <h3 class="font-bold text-lg">Company Account</h3>
+                <p class="text-sm mt-1">Make payment and upload receipt</p>
+                <p class="mt-2 font-semibold text-lg">CBN Nuggets</p>
+                <p class="text-sm">UBA Bank</p>
+                <p class="font-bold text-xl">1234567890</p>
+            </div>
+
+            <!-- TITLE -->
+            <h2 class="text-3xl font-bold text-center text-orange-500 mb-6">
+                Place Your Order
+            </h2>
+
+            <!-- ORDER FORM -->
+            <form class="space-y-6">
+              
+
+                <!-- FULL NAME -->
+                <div>
+                    <label class="block font-semibold mb-1">Full Name</label>
+                    <input type="text" placeholder="Enter your full name"
+                        class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-orange-400 outline-none" required>
+                </div>
+
+                <!-- PHONE NUMBER -->
+                <div>
+                    <label class="block font-semibold mb-1">Phone Number</label>
+                    <input type="tel" placeholder="Enter your phone number"
+                        class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-orange-400 outline-none" required>
+                </div>
+
+                <!-- DELIVERY ADDRESS -->
+                <div>
+                    <label class="block font-semibold mb-1">Delivery Address</label>
+                    <textarea placeholder="Enter your delivery address"
+                        class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-orange-400 outline-none" rows="3" required></textarea>
+                </div>
+
+                <!-- DELIVERY LOCATION -->
+                <div>
+                    <label class="block font-semibold mb-1">Delivery Location</label>
+                    <select class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-orange-400 outline-none" required>
+                        <option value="" disabled selected>Select your location</option>
+                        <option>Awka</option>
+                        <option>Onitsha</option>
+                        <option>Nnewi</option>
+                        <option>Enugu</option>
+                        <option>Asaba</option>
+                    </select>
+                </div>
+
+                <!-- FOOD QUANTITY -->
+                <div>
+                    <label class="block font-semibold mb-1">Quantity</label>
+                    <input type="number" min="1" value="1"
+                        class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-orange-400 outline-none" required>
+                </div>
+
+                <!-- PROOF OF PAYMENT -->
+                <div>
+                    <label class="block font-semibold mb-1">Upload Proof of Payment</label>
+                    <input type="file"
+                        class="w-full p-3 border rounded-lg bg-gray-50 focus:ring-2 focus:ring-orange-400 outline-none" required>
+                </div>
+
+                <!-- SUBMIT BUTTON -->
+                <div class="text-center pt-4">
+                    <button type="submit"
+                        class="w-full bg-orange-500 text-white font-bold py-3 rounded-lg text-lg hover:bg-orange-600 transition shadow-md">
+                        Submit Order
+                    </button>
+                </div>
+
+            </form>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-10">
+
+            <!-- 1. Company Writeup & Links -->
+            <div>
+                <h2 class="text-2xl font-bold mb-4">CBN Chicken Nugget</h2>
+                <p class="text-gray-300 mb-4">
+                    Delivering delicious meals with passion and care. Join our journey for the best culinary experience in town!
+                </p>
+                <ul class="space-y-2 text-gray-300">
+                    <li class="flex items-center gap-2 hover:text-orange-500 cursor-pointer">
+                        <i class="fas fa-arrow-right"></i> <a href="about.html">About Us</a>
+                    </li>
+                    <li class="flex items-center gap-2 hover:text-orange-500 cursor-pointer">
+                        <i class="fas fa-arrow-right"></i> <a href="contact.html">Contact Us</a>
+                    </li>
+                    <li class="flex items-center gap-2 hover:text-orange-500 cursor-pointer">
+                        <i class="fas fa-arrow-right"></i> <a href="#">Privacy Policy</a>
+                    </li>
+                    <li class="flex items-center gap-2 hover:text-orange-500 cursor-pointer">
+                        <i class="fas fa-arrow-right"></i> <a href="#">Terms & Conditions</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 2. Contact Info & Social Media -->
+            <div>
+                <h2 class="text-2xl font-bold mb-4">Contact</h2>
+                <div class="flex items-center gap-2 mb-2">
+                    <i class="material-icons text-orange-500">location_on</i>
+                    <p class="text-gray-300">25 Amenyi Road, Awka, Anambra, Nigeria</p>
+                </div>
+                <div class="flex items-center gap-2 mb-2">
+                    <i class="material-icons text-orange-500">call</i>
+                    <p class="text-gray-300">+234 907 710 0525</p>
+                </div>
+                <div class="flex items-center gap-2 mb-4">
+                    <i class="material-icons text-orange-500">mail</i>
+                    <p class="text-gray-300">cbnnuggets@gmail.com</p>
+                </div>
+
+                <div class="flex gap-4 mt-2">
+                    <a href="#" class="text-gray-300 hover:text-orange-500"><i class="fab fa-twitter fa-lg"></i></a>
+                    <a href="#" class="text-gray-300 hover:text-orange-500"><i class="fab fa-facebook-f fa-lg"></i></a>
+                    <a href="#" class="text-gray-300 hover:text-orange-500"><i class="fab fa-youtube fa-lg"></i></a>
+                    <a href="#" class="text-gray-300 hover:text-orange-500"><i class="fab fa-linkedin-in fa-lg"></i></a>
+                </div>
+            </div>
+
+            <!-- 3. Opening Hours -->
+            <div>
+                <h2 class="text-2xl font-bold mb-4">Opening Hours</h2>
+                <div class="text-gray-300 space-y-2">
+                    <p>Monday - Saturday</p>
+                    <p>09AM - 09PM</p>
+                    <p>Sunday</p>
+                    <p>10AM - 08PM</p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Font Awesome & Material Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-pVJ1u5MvVQKcZBJt1u5aGgA3pM2cOxgDd0q+1zM0Sm6IkqR8Gv3V7abN9MkY1p5axRvG5oaPv5DfSqqiZUJ3vQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- SCROLL TO TOP BUTTON -->
+    <button id="scrollTopBtn" 
+        class="fixed bottom-6 right-6 bg-orange-500 text-white p-3 rounded-full shadow-lg text-2xl hidden z-50">
+        ↑
+    </button>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+
+        const scrollBtn = document.getElementById("scrollTopBtn");
+
+        window.addEventListener("scroll", function () {
+            if (window.scrollY > 200) {
+                scrollBtn.classList.remove("hidden");
+            } else {
+                scrollBtn.classList.add("hidden");
+            }
+        });
+
+        scrollBtn.addEventListener("click", function () {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+
+    });
+    </script>
+
+</body>
+</html>

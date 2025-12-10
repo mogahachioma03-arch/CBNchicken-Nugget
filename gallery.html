@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - CBN Chicken Nugget</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-gray-50">
+
+    <!-- NAVBAR -->
+    <nav class="bg-white shadow-md py-4 px-6 flex justify-between items-center">
+        <div class="flex items-center gap-4">
+            <img src="./images/logo1.jpeg" class="w-12 h-12 object-cover rounded-full">
+            <h1 class="text-2xl font-bold text-gray-900">CBN Chicken Nugget</h1>
+        </div>
+
+        <ul class="flex gap-6">
+            <li><a href="index.html" class="text-gray-700 hover:text-orange-500 font-semibold">HOME</a></li>
+            <li><a href="menu.html" class="text-gray-700 hover:text-orange-500 font-semibold">MENU</a></li>
+            <li><a href="order.html" class="text-gray-700 hover:text-orange-500 font-semibold">ORDER</a></li>
+            <li><a href="gallery.html" class="text-gray-700 hover:text-orange-500 font-semibold">GALLERY</a></li>
+            <li><a href="service.html" class="text-gray-700 hover:text-orange-500 font-semibold">SERVICE</a></li>
+            <li><a href="contact.html" class="text-gray-700 hover:text-orange-500 font-semibold">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <!-- GALLERY SECTION -->
+    <section class="py-16 px-4">
+        <h2 class="text-4xl font-bold text-center text-orange-500 mb-12">Our Food Gallery</h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+
+            <!-- IMAGE ITEM 1 -->
+            <div class="relative group overflow-hidden rounded-2xl shadow-lg cursor-pointer">
+                <img src="./images/shawarma5.jpg" alt="Food 1" class="w-full h-64 object-cover transition duration-500 group-hover:blur-sm">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent 
+                    opacity-0 group-hover:opacity-100 transition duration-500 flex flex-col justify-end p-4 text-white">
+                    <h3 class="text-lg font-bold">Shawarma Delight</h3>
+                    <p class="text-sm">Spicy grilled chicken wrapped in soft bread.</p>
+                    <p class="text-xs">Perfect for lunch or dinner!</p>
+                </div>
+            </div>
+
+            <!-- IMAGE ITEM 2 -->
+            <div class="relative group overflow-hidden rounded-2xl shadow-lg cursor-pointer">
+                <img src="./images/pbuger.jpg" alt="Food 2" class="w-full h-64 object-cover transition duration-500 group-hover:blur-sm">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent 
+                    opacity-0 group-hover:opacity-100 transition duration-500 flex flex-col justify-end p-4 text-white">
+                    <h3 class="text-lg font-bold">Classic Burger</h3>
+                    <p class="text-sm">Juicy beef patty with fresh veggies and cheese.</p>
+                    <p class="text-xs">A timeless favorite!</p>
+                </div>
+            </div>
+
+            <!-- IMAGE ITEM 3 -->
+            <div class="relative group overflow-hidden rounded-2xl shadow-lg cursor-pointer">
+                <img src="./images/vivian.jpg" alt="Food 3" class="w-full h-64 object-cover transition duration-500 group-hover:blur-sm">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent 
+                    opacity-0 group-hover:opacity-100 transition duration-500 flex flex-col justify-end p-4 text-white">
+                    <h3 class="text-lg font-bold">Crispy Nuggets</h3>
+                    <p class="text-sm">Golden fried chicken nuggets for a tasty snack.</p>
+                    <p class="text-xs">Kids love it!</p>
+                </div>
+            </div>
+
+            <!-- IMAGE ITEM 4 -->
+            <div class="relative group overflow-hidden rounded-2xl shadow-lg cursor-pointer">
+                <img src="./images/chicken-macaroni-salad-in-serving-bowl.webp" alt="Food 4" class="w-full h-64 object-cover transition duration-500 group-hover:blur-sm">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent 
+                    opacity-0 group-hover:opacity-100 transition duration-500 flex flex-col justify-end p-4 text-white">
+                    <h3 class="text-lg font-bold">Chicken Macaroni Salad</h3>
+                    <p class="text-sm">A rich mix of tender chicken and creamy macaroni.</p>
+                    <p class="text-xs">Full of flavor!</p>
+                </div>
+            </div>
+
+            <!-- IMAGE ITEM 5 -->
+            <div class="relative group overflow-hidden rounded-2xl shadow-lg cursor-pointer">
+                <img src="./images/chips.jpg" alt="Food 5" class="w-full h-64 object-cover transition duration-500 group-hover:blur-sm">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent 
+                    opacity-0 group-hover:opacity-100 transition duration-500 flex flex-col justify-end p-4 text-white">
+                    <h3 class="text-lg font-bold">Chicken and Chips</h3>
+                    <p class="text-sm">Crispy fries topped with cheese and spices.</p>
+                    <p class="text-xs">Snack time favorite!</p>
+                </div>
+            </div>
+
+            <!-- IMAGE ITEM 6 -->
+            <div class="relative group overflow-hidden rounded-2xl shadow-lg cursor-pointer">
+                <img src="./images/potatoes.jpg" alt="Food 6" class="w-full h-64 object-cover transition duration-500 group-hover:blur-sm">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent 
+                    opacity-0 group-hover:opacity-100 transition duration-500 flex flex-col justify-end p-4 text-white">
+                    <h3 class="text-lg font-bold">Peppered Potato & Chicken</h3>
+                    <p class="text-sm">Soft potatoes mixed with spicy seasoned chicken.</p>
+                    <p class="text-xs">Perfect with drinks!</p>
+                </div>
+            </div>
+
+            <!-- IMAGE ITEM 7 -->
+            <div class="relative group overflow-hidden rounded-2xl shadow-lg cursor-pointer">
+                <img src="./images/chicken salad.jpg" alt="Food 7" class="w-full h-64 object-cover transition duration-500 group-hover:blur-sm">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent 
+                    opacity-0 group-hover:opacity-100 transition duration-500 flex flex-col justify-end p-4 text-white">
+                    <h3 class="text-lg font-bold">Veggie Chicken Salad</h3>
+                    <p class="text-sm">Fresh vegetables for a healthy meal.</p>
+                    <p class="text-xs">Light and tasty!</p>
+                </div>
+            </div>
+
+            <!-- IMAGE ITEM 8 -->
+            <div class="relative group overflow-hidden rounded-2xl shadow-lg cursor-pointer">
+                <img src="./images/sandwich2.jpg" alt="Food 8" class="w-full h-64 object-cover transition duration-500 group-hover:blur-sm">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent 
+                    opacity-0 group-hover:opacity-100 transition duration-500 flex flex-col justify-end p-4 text-white">
+                    <h3 class="text-lg font-bold">Sandwich</h3>
+                    <p class="text-sm">Cheesy sandwich slice loaded with toppings.</p>
+                    <p class="text-xs">Perfect for sharing!</p>
+                </div>
+            </div>
+
+            <!-- IMAGE ITEM 9 -->
+            <div class="relative group overflow-hidden rounded-2xl shadow-lg cursor-pointer">
+                <img src="./images/lollipop2.jpg" alt="Food 9" class="w-full h-64 object-cover transition duration-500 group-hover:blur-sm">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent 
+                    opacity-0 group-hover:opacity-100 transition duration-500 flex flex-col justify-end p-4 text-white">
+                    <h3 class="text-lg font-bold">Lollipop</h3>
+                    <p class="text-sm">Chicken lollipops fried and seasoned to perfection.</p>
+                    <p class="text-xs">Meal deal!</p>
+                </div>
+            </div>
+
+            <!-- IMAGE ITEM 10 -->
+            <div class="relative group overflow-hidden rounded-2xl shadow-lg cursor-pointer">
+                <img src="./images/shawarma3.jpg" alt="Food 10" class="w-full h-64 object-cover transition duration-500 group-hover:blur-sm">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent 
+                    opacity-0 group-hover:opacity-100 transition duration-500 flex flex-col justify-end p-4 text-white">
+                    <h3 class="text-lg font-bold">Chicken Shawarma</h3>
+                    <p class="text-sm">Grilled and wrapped with flavorful spices.</p>
+                    <p class="text-xs">Hot and tasty!</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-10">
+
+            <!-- Company Info -->
+            <div>
+                <h2 class="text-2xl font-bold mb-4">CBN Chicken Nugget</h2>
+                <p class="text-gray-300 mb-4">
+                    Delivering delicious meals with passion and care. Join our journey for the best culinary experience in town!
+                </p>
+                <ul class="space-y-2 text-gray-300">
+                    <li class="flex items-center gap-2 hover:text-orange-500 cursor-pointer">
+                        <i class="fas fa-arrow-right"></i> <a href="about.html">About Us</a>
+                    </li>
+                    <li class="flex items-center gap-2 hover:text-orange-500 cursor-pointer">
+                        <i class="fas fa-arrow-right"></i> <a href="contact.html">Contact Us</a>
+                    </li>
+                    <li class="flex items-center gap-2 hover:text-orange-500 cursor-pointer">
+                        <i class="fas fa-arrow-right"></i> <a href="#">Privacy Policy</a>
+                    </li>
+                    <li class="flex items-center gap-2 hover:text-orange-500 cursor-pointer">
+                        <i class="fas fa-arrow-right"></i> <a href="#">Terms & Conditions</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Contact -->
+            <div>
+                <h2 class="text-2xl font-bold mb-4">Contact</h2>
+                <div class="flex items-center gap-2 mb-2">
+                    <i class="material-icons text-orange-500">location_on</i>
+                    <p class="text-gray-300">25 Amenyi Road, Awka, Anambra, Nigeria</p>
+                </div>
+                <div class="flex items-center gap-2 mb-2">
+                    <i class="material-icons text-orange-500">call</i>
+                    <p class="text-gray-300">+234 907 710 0525</p>
+                </div>
+                <div class="flex items-center gap-2 mb-4">
+                    <i class="material-icons text-orange-500">mail</i>
+                    <p class="text-gray-300">cbnnuggets@gmail.com</p>
+                </div>
+
+                <div class="flex gap-4 mt-2">
+                    <a href="#" class="text-gray-300 hover:text-orange-500"><i class="fab fa-twitter fa-lg"></i></a>
+                    <a href="#" class="text-gray-300 hover:text-orange-500"><i class="fab fa-facebook-f fa-lg"></i></a>
+                    <a href="#" class="text-gray-300 hover:text-orange-500"><i class="fab fa-youtube fa-lg"></i></a>
+                    <a href="#" class="text-gray-300 hover:text-orange-500"><i class="fab fa-linkedin-in fa-lg"></i></a>
+                </div>
+            </div>
+
+            <!-- Opening Hours -->
+            <div>
+                <h2 class="text-2xl font-bold mb-4">Opening Hours</h2>
+                <div class="text-gray-300 space-y-2">
+                    <p>Monday - Saturday</p>
+                    <p>09AM - 09PM</p>
+                    <p>Sunday</p>
+                    <p>10AM - 08PM</p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Font Awesome & Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- SCROLL TO TOP -->
+    <button id="scrollTopBtn" 
+        class="fixed bottom-6 right-6 bg-orange-500 text-white p-3 rounded-full shadow-lg text-2xl hidden z-50">
+        ↑
+    </button>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const scrollBtn = document.getElementById("scrollTopBtn");
+
+            window.addEventListener("scroll", function () {
+                if (window.scrollY > 200) {
+                    scrollBtn.classList.remove("hidden");
+                } else {
+                    scrollBtn.classList.add("hidden");
+                }
+            });
+
+            scrollBtn.addEventListener("click", function () {
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>

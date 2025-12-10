@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CBN Chicken Nugget</title>
+
+    <link rel="stylesheet" href="pratice.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-pVJ1u5MvVQKcZBJt1u5aGgA3pM2cOxgDd0q+1zM0Sm6IkqR8Gv3V7abN9MkY1p5axRvG5oaPv5DfSqqiZUJ3vQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <div class="nav-container">
+
+            <div class="logo-container">
+                <img src="./images/logo1.jpeg" class="logo">
+                <h1 class="company-name">CBN Chicken Nugget</h1>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="order.html">ORDER</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="service.html">SERVICE</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+
+        </div>
+    </div>
+
+    <!-- HERO SECTION -->
+    <div class="w-full min-h-screen flex flex-col lg:flex-row items-center justify-between px-8 lg:px-20 py-20">
+
+        <!-- LEFT SIDE: TEXT AREA -->
+        <div class="flex-1 text-center lg:text-left space-y-6">
+            <h1 class="text-4xl lg:text-6xl font-bold text-gray-900">
+                Enjoy Your Delicious Food
+            </h1>
+
+            <p class="text-lg text-gray-700 max-w-xl">
+                One bite of our nuggets and you’ll understand what real flavour tastes like
+            </p>
+
+            <!-- SEARCH BAR -->
+            <div class="relative w-full max-w-md mx-auto lg:mx-0">
+                <input type="text" id="food-search" 
+                    placeholder="Search for food..."
+                    class="w-full p-3 border border-gray-300 rounded-lg">
+                <ul id="food-list" class="hidden absolute w-full bg-white border mt-1 rounded-lg shadow"></ul>
+            </div>
+
+            <a href="order.html" class="inline-block bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 py-3 rounded-lg text-lg transition">
+                Order Now
+            </a>
+        </div>
+
+        <!-- RIGHT SIDE IMAGE -->
+        <div class="flex-1 mt-10 lg:mt-0 flex justify-center">
+            <img src="./images/vivian.jpg"
+                class="w-[450px] h-[450px] object-cover rounded-full shadow-xl rotate-slow"
+                alt="Food Image">
+        </div>
+
+    </div>
+
+    <!-- FIRST OFFERINGS SECTION -->
+    <section class="py-16 px-4 text-center">
+
+        <h2 class="text-3xl font-bold text-gray-800 mb-10">
+            A Taste of Our Offerings
+        </h2>
+
+        <div class="flex flex-wrap justify-center gap-6 mb-12">
+            <img src="./images/new.avif" 
+                class="w-72 h-48 object-cover rounded-xl shadow-md" alt="Food 1">
+
+            <img src="./images/shawarma.jpg" 
+                class="w-72 h-48 object-cover rounded-xl shadow-md" alt="Food 2">
+
+            <img src="./images/buger2.jpg" 
+                class="w-72 h-48 object-cover rounded-xl shadow-md" alt="Food 3">
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            <div class="bg-yellow-100 p-6 rounded-xl shadow text-lg font-semibold">
+                Signature Dishes 1
+            </div>
+
+            <div class="bg-yellow-100 p-6 rounded-xl shadow text-lg font-semibold">
+                Signature Dishes 2
+            </div>
+
+            <div class="bg-yellow-100 p-6 rounded-xl shadow text-lg font-semibold">
+                Signature Dishes 3
+            </div>
+        </div>
+
+    </section>
+
+    <!-- EVENTS & CATERING SECTION -->
+    <section class="py-16 px-4 text-center">
+
+        <h2 class="text-3xl font-bold text-gray-800 mb-10">
+            Events and Caterings
+        </h2>
+
+        <div class="flex flex-wrap justify-center gap-6 mb-12">
+            <img src="./images/private.jpg" 
+                class="w-72 h-48 object-cover rounded-xl shadow-md" alt="Event 1">
+
+            <img src="./images/wedding.jpg" 
+                class="w-72 h-48 object-cover rounded-xl shadow-md" alt="Event 2">
+
+            <img src="./images/coperate.jpg" 
+                class="w-72 h-48 object-cover rounded-xl shadow-md" alt="Event 3">
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            <div class="bg-yellow-100 p-6 rounded-xl shadow text-lg font-semibold">
+                Private Parties
+            </div>
+
+            <div class="bg-yellow-100 p-6 rounded-xl shadow text-lg font-semibold">
+                Wedding Events Parties
+            </div>
+
+            <div class="bg-yellow-100 p-6 rounded-xl shadow text-lg font-semibold">
+                Corporate Events
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ABOUT US SECTION -->
+    <section class="w-full bg-white py-16 px-6 md:px-12">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+
+            <div class="flex justify-center">
+                <img 
+                    src="./images/chef.jpg" 
+                    alt="About Us Image" 
+                    class="w-full max-w-[450px] rounded-2xl shadow-lg object-cover">
+            </div>
+
+            <div>
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gray-800">About Us</h2>
+
+                <p class="text-gray-700 leading-relaxed text-lg">
+                    CBN Chicken Nuggets is a brand built on quality, creativity, and unforgettable taste. 
+                    We believe that great food should bring joy with every single bite. Our mission is to 
+                    serve flavour-packed, exciting chicken meals that are anything but boring—meals that 
+                    truly stand out in quality and satisfaction.<br><br>
+
+                    Our journey began in 2019, right from our home kitchen. On February 14th, 2020, we 
+                    made our first outdoor appearance, driven by a big dream to introduce a unique style 
+                    of chicken meal to passionate chicken lovers. We started with our signature chicken 
+                    nuggets, and over time, our passion and customer love helped us grow into a diverse 
+                    menu that now includes Chicken Salad, Peppered Potatoes and Chicken, Chicken Shawarma, 
+                    and many more delicious options.<br><br>
+
+                    Every recipe is crafted with care, fresh ingredients, and an unwavering commitment 
+                    to excellence.<br><br>
+
+                    At CBN Chicken Nuggets, we stand for freshness, quality, and customer satisfaction. 
+                    We strive to be the go-to brand for every chicken lover seeking meals that are tasty, 
+                    affordable, and truly memorable. Our mission remains the same: to deliver premium 
+                    nuggets and chicken delicacies with world-class taste, one satisfied customer at a time.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SOCIAL MEDIA ICONS -->
+    <section class="py-12 flex flex-col items-center">
+
+        <h3 class="text-2xl font-semibold text-gray-800 mb-6">Follow Us</h3>
+
+        <div class="bg-gradient-to-r from-orange-400 to-red-500 px-8 py-4 rounded-2xl shadow-lg flex items-center gap-6">
+
+            <!-- Facebook -->
+            <a href="https://facebook.com/Kobimdi Morgan" target="_blank" 
+                class="p-3 bg-white bg-opacity-20 rounded-full hover:bg-opacity-40 transition">
+                <i class="fab fa-facebook-f text-white text-2xl"></i>
+            </a>
+
+            <!-- Twitter -->
+            <a href="https://twitter.com/yourpage" target="_blank" 
+                class="p-3 bg-white bg-opacity-20 rounded-full hover:bg-opacity-40 transition">
+                <i class="fab fa-twitter text-white text-2xl"></i>
+            </a>
+
+            <!-- WhatsApp -->
+            <a href="https://wa.me/yourwhatsapplink" target="_blank"
+                class="p-3 bg-white bg-opacity-20 rounded-full hover:bg-opacity-40 transition">
+                <i class="fab fa-whatsapp text-white text-2xl"></i>
+            </a>
+
+            <!-- Instagram -->
+            <a href="https://instagram.com/yourpage" target="_blank"
+                class="p-3 bg-white bg-opacity-20 rounded-full hover:bg-opacity-40 transition">
+                <i class="fab fa-instagram text-white text-2xl"></i>
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- SCROLL TO TOP BUTTON -->
+    <button id="scrollTopBtn" 
+        class="fixed bottom-6 right-6 bg-orange-500 text-white p-3 rounded-full shadow-lg text-2xl hidden z-50">
+        ↑
+    </button>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+
+            const scrollBtn = document.getElementById("scrollTopBtn");
+
+            window.addEventListener("scroll", function () {
+                if (window.scrollY > 200) {
+                    scrollBtn.classList.remove("hidden");
+                } else {
+                    scrollBtn.classList.add("hidden");
+                }
+            });
+
+            scrollBtn.addEventListener("click", function () {
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                });
+            });
+
+        });
+    </script>
+
+</body>
+</html>

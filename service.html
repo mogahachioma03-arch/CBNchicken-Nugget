@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CBN Chicken Nugget | Services</title>
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-pVJ1u5MvVQKcZBJt1u5aGgA3pM2cOxgDd0q+1zM0Sm6IkqR8Gv3V7abN9MkY1p5axRvG5oaPv5DfSqqiZUJ3vQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    /* Slow rotation animation */
+    @keyframes rotate-slow {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .rotate-slow {
+      animation: rotate-slow 60s linear infinite;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-100">
+
+  <!-- NAVBAR -->
+  <div class="navbar bg-white shadow-md">
+    <div class="container mx-auto flex justify-between items-center p-4">
+
+      <!-- Logo -->
+      <div class="flex items-center gap-2">
+        <img src="./images/logo1.jpeg" alt="Logo" class="w-12 h-12 rounded-full object-cover" />
+        <h1 class="text-xl font-bold text-orange-500">CBN Chicken Nugget</h1>
+      </div>
+
+      <!-- Navigation Links -->
+      <ul class="flex gap-6 font-semibold">
+        <li><a href="index.html" class="hover:text-orange-500 transition">HOME</a></li>
+        <li><a href="menu.html" class="hover:text-orange-500 transition">MENU</a></li>
+        <li><a href="order.html" class="hover:text-orange-500 transition">ORDER</a></li>
+        <li><a href="gallery.html" class="hover:text-orange-500 transition">GALLERY</a></li>
+        <li><a href="contact.html" class="hover:text-orange-500 transition">CONTACT</a></li>
+        <li><a href="services.html" class="hover:text-orange-500 transition">SERVICES</a></li>
+      </ul>
+
+    </div>
+  </div>
+
+  <!-- HERO SECTION -->
+  <section class="relative h-[50vh] flex flex-col md:flex-row items-center justify-center px-4 md:px-20 bg-gray-100">
+
+    <!-- LEFT: Text -->
+    <div class="md:w-1/2 z-10 mb-8 md:mb-0">
+      <h1 class="text-5xl font-bold text-orange-500 mb-4">Our Services</h1>
+      <p class="text-gray-800 text-lg max-w-lg">
+        Delivering top-notch meals with love, care, and quality. Our chefs are passionate about creating unforgettable culinary experiences.
+      </p>
+    </div>
+
+    <!-- RIGHT: Rotating Image -->
+    <div class="md:w-1/2 flex justify-center items-center">
+      <img
+        src="./images/shawarma3.jpg"
+        alt="Services Image"
+        class="w-[300px] h-[300px] object-cover rounded-full rotate-slow shadow-lg"
+      />
+    </div>
+
+  </section>
+
+  <!-- FEATURES SECTION -->
+  <section class="py-20 px-4">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
+
+      <!-- MASTER CHEF -->
+      <div class="flex flex-col items-center gap-4 bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition">
+        <div class="flex items-center gap-2">
+          <i class="fa-solid fa-user-chef text-3xl text-orange-500"></i>
+          <h3 class="text-xl font-bold text-gray-800 flex items-center gap-2">Master Chef</h3>
+          <i class="fa-solid fa-cart-shopping text-orange-500"></i>
+        </div>
+        <p class="text-gray-600 max-w-xs">Our chefs craft every meal with skill, passion, and excellence.</p>
+      </div>
+
+      <!-- QUALITY FOOD -->
+      <div class="flex flex-col items-center gap-4 bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition">
+        <div class="flex items-center gap-2">
+          <i class="fa-solid fa-utensils text-3xl text-orange-500"></i>
+          <h3 class="text-xl font-bold text-gray-800">Quality Food</h3>
+        </div>
+        <p class="text-gray-600 max-w-xs">We use fresh, premium ingredients to give you exceptional taste every time.</p>
+      </div>
+
+      <!-- FAST DELIVERY -->
+      <div class="flex flex-col items-center gap-4 bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition">
+        <div class="flex items-center gap-2">
+          <i class="fa-solid fa-truck-fast text-3xl text-orange-500"></i>
+          <h3 class="text-xl font-bold text-gray-800">Fast Delivery</h3>
+        </div>
+        <p class="text-gray-600 max-w-xs">Enjoy hot, fresh meals delivered to your doorstep in record time.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- TEAM SECTION -->
+  <section class="py-16 bg-white">
+    <h1 class="text-4xl font-bold text-center text-orange-500 mb-12">Meet Our Team</h1>
+
+    <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 px-6">
+
+      <!-- TEAM MEMBER 1 -->
+      <div class="bg-white shadow-lg rounded-2xl p-6 text-center">
+        <img src="./images/chef.jpg" class="w-32 h-32 rounded-full mx-auto object-cover border-4 border-gray-200 shadow" />
+        <h3 class="text-xl font-bold mt-4">Charlse Bruno</h3>
+        <p class="text-gray-600 text-sm mb-4">Head Chef</p>
+        <div class="flex justify-center gap-4 text-gray-600">
+          <i class="fab fa-facebook text-xl hover:text-orange-500"></i>
+          <i class="fab fa-instagram text-xl hover:text-orange-500"></i>
+          <i class="fab fa-twitter text-xl hover:text-orange-500"></i>
+        </div>
+      </div>
+
+      <!-- TEAM MEMBER 2 -->
+      <div class="bg-white shadow-lg rounded-2xl p-6 text-center">
+        <img src="./images/chef2.jpg" class="w-32 h-32 rounded-full mx-auto object-cover border-4 border-gray-200 shadow" />
+        <h3 class="text-xl font-bold mt-4">Michael Daniels</h3>
+        <p class="text-gray-600 text-sm mb-4">Kitchen Supervisor</p>
+        <div class="flex justify-center gap-4 text-gray-600">
+          <i class="fab fa-facebook text-xl hover:text-orange-500"></i>
+          <i class="fab fa-instagram text-xl hover:text-orange-500"></i>
+          <i class="fab fa-twitter text-xl hover:text-orange-500"></i>
+        </div>
+      </div>
+
+      <!-- TEAM MEMBER 3 -->
+      <div class="bg-white shadow-lg rounded-2xl p-6 text-center">
+        <img src="./images/chef3.jpg" class="w-32 h-32 rounded-full mx-auto object-cover border-4 border-gray-200 shadow" />
+        <h3 class="text-xl font-bold mt-4">Grace Williams</h3>
+        <p class="text-gray-600 text-sm mb-4">Customer Service</p>
+        <div class="flex justify-center gap-4 text-gray-600">
+          <i class="fab fa-facebook text-xl hover:text-orange-500"></i>
+          <i class="fab fa-instagram text-xl hover:text-orange-500"></i>
+          <i class="fab fa-twitter text-xl hover:text-orange-500"></i>
+        </div>
+      </div>
+
+      <!-- TEAM MEMBER 4 -->
+      <div class="bg-white shadow-lg rounded-2xl p-6 text-center">
+        <img src="./images/chef4.jpg" class="w-32 h-32 rounded-full mx-auto object-cover border-4 border-gray-200 shadow" />
+        <h3 class="text-xl font-bold mt-4">Okafor Neye</h3>
+        <p class="text-gray-600 text-sm mb-4">Delivery Manager</p>
+        <div class="flex justify-center gap-4 text-gray-600">
+          <i class="fab fa-facebook text-xl hover:text-orange-500"></i>
+          <i class="fab fa-instagram text-xl hover:text-orange-500"></i>
+          <i class="fab fa-twitter text-xl hover:text-orange-500"></i>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-800 text-white py-12">
+    <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-10">
+
+      <!-- COMPANY -->
+      <div>
+        <h2 class="text-2xl font-bold mb-4">CBN Chicken Nugget</h2>
+        <p class="text-gray-300 mb-4">
+          Delivering delicious meals with passion and care. Join our journey for the best culinary experience in town!
+        </p>
+        <ul class="space-y-2 text-gray-300">
+          <li class="flex items-center gap-2 hover:text-orange-500 cursor-pointer"><i class="fas fa-arrow-right"></i> About Us</li>
+          <li class="flex items-center gap-2 hover:text-orange-500 cursor-pointer"><i class="fas fa-arrow-right"></i> Contact Us</li>
+          <li class="flex items-center gap-2 hover:text-orange-500 cursor-pointer"><i class="fas fa-arrow-right"></i> Privacy Policy</li>
+          <li class="flex items-center gap-2 hover:text-orange-500 cursor-pointer"><i class="fas fa-arrow-right"></i> Terms & Conditions</li>
+        </ul>
+      </div>
+
+      <!-- CONTACT -->
+      <div>
+        <h2 class="text-2xl font-bold mb-4">Contact</h2>
+        <div class="flex items-center gap-2 mb-2">
+          <i class="material-icons text-orange-500">location_on</i>
+          <p class="text-gray-300">25 Amenyi Road, Awka, Nigeria</p>
+        </div>
+        <div class="flex items-center gap-2 mb-2">
+          <i class="material-icons text-orange-500">call</i>
+          <p class="text-gray-300">+234 907 710 0525</p>
+        </div>
+        <div class="flex items-center gap-2 mb-4">
+          <i class="material-icons text-orange-500">mail</i>
+          <p class="text-gray-300">cbnnuggets@gmail.com</p>
+        </div>
+        <div class="flex gap-4 mt-2">
+          <i class="fab fa-twitter fa-lg hover:text-orange-500 cursor-pointer"></i>
+          <i class="fab fa-facebook-f fa-lg hover:text-orange-500 cursor-pointer"></i>
+          <i class="fab fa-youtube fa-lg hover:text-orange-500 cursor-pointer"></i>
+          <i class="fab fa-linkedin-in fa-lg hover:text-orange-500 cursor-pointer"></i>
+        </div>
+      </div>
+
+      <!-- HOURS -->
+      <div>
+        <h2 class="text-2xl font-bold mb-4">Opening Hours</h2>
+        <div class="text-gray-300 space-y-2">
+          <p>Monday - Saturday</p>
+          <p>09AM - 09PM</p>
+          <p>Sunday</p>
+          <p>10AM - 08PM</p>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- SCROLL TO TOP BUTTON -->
+  <button
+    id="scrollTopBtn"
+    class="fixed bottom-6 right-6 bg-orange-500 text-white p-3 rounded-full shadow-lg text-2xl hidden z-50"
+  >
+    ↑
+  </button>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+      const scrollBtn = document.getElementById("scrollTopBtn");
+
+      window.addEventListener("scroll", function () {
+        if (window.scrollY > 200) {
+          scrollBtn.classList.remove("hidden");
+        } else {
+          scrollBtn.classList.add("hidden");
+        }
+      });
+
+      scrollBtn.addEventListener("click", function () {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+
+    });
+  </script>
+
+</body>
+</html>

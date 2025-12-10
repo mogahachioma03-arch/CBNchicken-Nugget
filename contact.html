@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CBN Chicken Nugget | Contact Us</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-pVJ1u5MvVQKcZBJt1u5aGgA3pM2cOxgDd0q+1zM0Sm6IkqR8Gv3V7abN9MkY1p5axRvG5oaPv5DfSqqiZUJ3vQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Google Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="relative min-h-screen">
+    <!-- BACKGROUND IMAGE WITH OVERLAY -->
+    <div class="absolute inset-0">
+      <img
+        src="./images/telephone.jpg"
+        alt="Background"
+        class="w-full h-full object-cover"
+      />
+      <div class="absolute inset-0 bg-black opacity-40"></div>
+      <!-- dark overlay for readability -->
+    </div>
+
+    <!-- NAVBAR -->
+    <div class="relative z-10 navbar bg-white bg-opacity-90 shadow-md">
+      <div class="container mx-auto flex justify-between items-center p-4">
+        <!-- Logo -->
+        <div class="flex items-center gap-2">
+          <img
+            src="./images/logo1.jpeg"
+            alt="Logo"
+            class="w-12 h-12 rounded-full object-cover"
+          />
+          <h1 class="text-xl font-bold text-orange-500">CBN Chicken Nugget</h1>
+        </div>
+
+        <!-- Navigation Links -->
+        <ul class="flex gap-6 font-semibold">
+          <li>
+            <a href="index.html" class="hover:text-orange-500 transition">HOME</a>
+          </li>
+          <li>
+            <a href="menu.html" class="hover:text-orange-500 transition">MENU</a>
+          </li>
+          <li>
+            <a href="order.html" class="hover:text-orange-500 transition">ORDER</a>
+          </li>
+          <li>
+            <a href="gallery.html" class="hover:text-orange-500 transition">GALLERY</a>
+          </li>
+          <li>
+            <a href="service.html" class="hover:text-orange-500 transition">SERVICE</a>
+          </li>
+          <li>
+            <a href="contact.html" class="hover:text-orange-500 transition">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- CONTACT PAGE WRAPPER -->
+    <main
+      class="relative z-10 flex justify-center items-center py-20 px-4 min-h-screen"
+    >
+      <div
+        class="bg-white bg-opacity-95 shadow-2xl rounded-2xl p-10 w-[90%] max-w-xl"
+      >
+        <!-- Title -->
+        <h2 class="text-3xl font-bold text-center text-orange-500 mb-8">
+          Contact Us
+        </h2>
+
+        <div class="space-y-8">
+          <!-- LOCATION -->
+          <div class="flex items-start gap-4">
+            <span class="material-icons text-orange-500 text-3xl">location_on</span>
+            <div>
+              <h3 class="text-lg font-semibold text-gray-800">Our Location</h3>
+              <p class="text-gray-600">25 Amenyi Road, Awka, Anambra, Nigeria</p>
+            </div>
+          </div>
+
+          <!-- PHONE -->
+          <div class="flex items-start gap-4">
+            <span class="material-icons text-orange-500 text-3xl">call</span>
+            <div>
+              <h3 class="text-lg font-semibold text-gray-800">Phone Number</h3>
+              <p class="text-gray-600">+234 907 710 0525</p>
+            </div>
+          </div>
+
+          <!-- EMAIL -->
+          <div class="flex items-start gap-4">
+            <span class="material-icons text-orange-500 text-3xl">mail</span>
+            <div>
+              <h3 class="text-lg font-semibold text-gray-800">Email Address</h3>
+              <p class="text-gray-600">cbnnuggets@gmail.com</p>
+            </div>
+          </div>
+
+          <!-- WEBSITE -->
+          <div class="flex items-start gap-4">
+            <span class="material-icons text-orange-500 text-3xl">language</span>
+            <div>
+              <h3 class="text-lg font-semibold text-gray-800">Website</h3>
+              <p class="text-gray-600">www.cbnnuggets.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- SCROLL TO TOP BUTTON -->
+    <button
+      id="scrollTopBtn"
+      class="fixed bottom-6 right-6 bg-orange-500 text-white p-3 rounded-full shadow-lg text-2xl hidden z-50"
+    >
+      ↑
+    </button>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const scrollBtn = document.getElementById("scrollTopBtn");
+
+        window.addEventListener("scroll", function () {
+          if (window.scrollY > 200) {
+            scrollBtn.classList.remove("hidden");
+          } else {
+            scrollBtn.classList.add("hidden");
+          }
+        });
+
+        scrollBtn.addEventListener("click", function () {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
