@@ -22,6 +22,11 @@
                 <img src="./images/logo1.jpeg" class="logo">
                 <h1 class="company-name">CBN Chicken Nugget</h1>
             </div>
+            <!-- HAMBURGER BUTTON FOR MOBILE -->
+<button class="hamburger" id="hamburgerBtn">
+    <i class="fa-solid fa-bars"></i>
+</button>
+
 
             <ul class="nav-links">
                 <li><a href="index.html">HOME</a></li>
@@ -218,6 +223,15 @@
         class="fixed bottom-6 right-6 bg-orange-500 text-white p-3 rounded-full shadow-lg text-2xl hidden z-50">
         ↑
     </button>
+
+    <script>
+    const hamBtn = document.getElementById("hamburgerBtn");
+    const navLinks = document.querySelector(".nav-links");
+
+    hamBtn.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+    });
+</script>
 
     <script>
         document.addEventListener("DOMContentLoaded", function() {
