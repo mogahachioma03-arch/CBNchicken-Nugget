@@ -6,6 +6,7 @@
     <title>CBN Chicken Nugget</title>
 
     <link rel="stylesheet" href="pratice.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Font Awesome -->
@@ -24,6 +25,7 @@
             </div>
 
              <!-- NAV LINKS -->
+    <i class="fa fa-times" onclick="hideMenu()"></i>
     <ul class="nav-links" id="navLinks">
       <li><a href="index.html">Home</a></li>
       <li><a href="menu.html">Menu</a></li>
@@ -32,14 +34,9 @@
       <li><a href="service.html">Service</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
-
-    <!-- HAMBURGER BUTTON -->
-    <button class="hamburger" id="hamburgerBtn">
-      ☰
-    </button>
-
         </div>
     </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
 
     <!-- HERO SECTION -->
     <div class="w-full min-h-screen flex flex-col lg:flex-row items-center justify-between px-8 lg:px-20 py-20">
@@ -218,44 +215,15 @@
         </div>
 
     </section>
-
-    <!-- SCROLL TO TOP BUTTON -->
-    <button id="scrollTopBtn" 
-        class="fixed bottom-6 right-6 bg-orange-500 text-white p-3 rounded-full shadow-lg text-2xl hidden z-50">
-        ↑
-    </button>
-
-   <script>
-  const hamBtn = document.getElementById("hamburgerBtn");
-  const navLinks = document.getElementById("navLinks");
-
-  hamBtn.addEventListener("click", () => {
-      navLinks.classList.toggle("active");
-  });
-</script>
-
-
+    <!-------JavaScript for Toggle Menu------->
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
-
-            const scrollBtn = document.getElementById("scrollTopBtn");
-
-            window.addEventListener("scroll", function () {
-                if (window.scrollY > 200) {
-                    scrollBtn.classList.remove("hidden");
-                } else {
-                    scrollBtn.classList.add("hidden");
-                }
-            });
-
-            scrollBtn.addEventListener("click", function () {
-                window.scrollTo({
-                    top: 0,
-                    behavior: "smooth"
-                });
-            });
-
-        });
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+         function hideMenu(){
+            navLinks.style.right="-200px";
+        }
     </script>
 
 </body>

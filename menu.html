@@ -23,12 +23,6 @@
       <li><a href="service.html">Service</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
-
-    <!-- HAMBURGER BUTTON -->
-    <button class="hamburger" id="hamburgerBtn">
-      ☰
-    </button>
-
     </nav>
 
     <!-- MENU HEADINGS -->
@@ -249,58 +243,6 @@
 integrity="sha512-pVJ1u5MvVQKcZBJt1u5aGgA3pM2cOxgDd0q+1zM0Sm6IkqR8Gv3V7abN9MkY1p5axRvG5oaPv5DfSqqiZUJ3vQ==" 
 crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-<!-- SCROLL TO TOP BUTTON -->
-<button id="scrollTopBtn" 
-        class="fixed bottom-6 right-6 bg-orange-500 text-white p-3 rounded-full shadow-lg text-2xl hidden z-50">
-    ↑
-</button>
-
-<script>
-const toggleBtn = document.getElementById("theme-toggle");
-
-// Load saved theme
-if (localStorage.getItem("theme") === "dark") {
-    document.body.classList.add("dark-mode");
-    toggleBtn.textContent = "☀️";
-}
-
-toggleBtn.addEventListener("click", () => {
-    document.body.classList.toggle("dark-mode");
-
-    if (document.body.classList.contains("dark-mode")) {
-        toggleBtn.textContent = "☀️";
-        localStorage.setItem("theme", "dark");
-    } else {
-        toggleBtn.textContent = "🌙";
-        localStorage.setItem("theme", "light");
-    }
-});
-</script>
-
-
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-
-    const scrollBtn = document.getElementById("scrollTopBtn");
-
-    window.addEventListener("scroll", function () {
-        if (window.scrollY > 200) {
-            scrollBtn.classList.remove("hidden");
-        } else {
-            scrollBtn.classList.add("hidden");
-        }
-    });
-
-    scrollBtn.addEventListener("click", function () {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        });
-    });
-
-});
-</script>
 
 </body>
 </html>
