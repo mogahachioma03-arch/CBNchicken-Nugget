@@ -37,6 +37,75 @@
   font-weight: bold;
 }
 
+/* NAV LINKS */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  font-size: 16px;
+  color: black;
+  font-weight: 600;
+}
+
+.nav-links li a:hover {
+  color: orange;
+}
+
+/* ===========================
+   HAMBURGER BUTTON
+=========================== */
+.hamburger {
+  display: none;
+  background: orange;
+  border: none;
+  color: white;
+  font-size: 26px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hamburger:hover {
+  background: darkorange;
+}
+
+/* ===========================
+   MOBILE VIEW
+=========================== */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 15px;
+    width: 220px;
+    background: white;
+    padding: 20px;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .company-name {
+    font-size: 18px;
+  }
+}
+
+
 .nav-links {
   list-style: none;
   display: flex;
