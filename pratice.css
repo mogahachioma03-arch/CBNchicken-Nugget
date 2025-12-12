@@ -59,28 +59,35 @@
 =========================== */
 .hamburger {
   display: none;
-  background: none;
+  background: orange;
   border: none;
-  font-size: 30px;
+  color: white;
+  font-size: 26px;
+  padding: 8px 12px;
+  border-radius: 6px;
   cursor: pointer;
+  transition: 0.3s;
 }
+
+.hamburger:hover {
+  background: darkorange;
+}
+
 
 /* ===========================
    MOBILE VIEW (<=768px)
 =========================== */
 @media (max-width: 768px) {
-  /* Show hamburger */
   .hamburger {
     display: block;
   }
 
-  /* Hide nav links */
   .nav-links {
     display: none;
     position: absolute;
     top: 70px;
-    right: 10px;
-    width: 200px;
+    right: 15px;
+    width: 220px;
     background: white;
     padding: 20px;
     flex-direction: column;
@@ -89,15 +96,15 @@
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
   }
 
-  /* Show when active */
   .nav-links.active {
     display: flex;
   }
+}
 
   .company-name {
     font-size: 18px;
   }
-}
+
 
 .logo-container {
   display: flex;
